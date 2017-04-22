@@ -1,7 +1,4 @@
-'use strict';
-
-// Declare app level module which depends on views, and components
-var myApp = angular.module('menuComponent', ['ui.router']);
+var myApp = angular.module('helloworld', ['ui.router']);
 
 myApp.config(function($stateProvider) {
   var helloState = {
@@ -9,31 +6,27 @@ myApp.config(function($stateProvider) {
     url: '/hello',
     template: '<h3>hello world!</h3>'
   }
-
+  
   var aboutState = {
     name: 'about',
     url: '/about',
     template: '<h3>Its the UI-Router hello world app!</h3>'
   }
-
+  
   $stateProvider.state(helloState);
   $stateProvider.state(aboutState);
 });
 
-myApp.service('initService',function(){
-  this.getData = function($http){
-    return $http.get('data/menu.json', { cache: true }).then(function(resp) {
-      return resp.data;
-    });
-  }
-});
-
 myApp.run(function ($uiRouter,initService) {
-  // start app
+ // start app
 
-  initService.getData().then(function(result) {
-
+ initService.doRequest().then(function(result) {
+  
     console.log("myvar = ", result);
   });
-
+ 
 });
+
+/*myApp.controller('initController',function($uiRouter,initService){
+  var myvar ="sss";
+})*/
