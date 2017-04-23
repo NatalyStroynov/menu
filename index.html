@@ -2,19 +2,21 @@
   <head>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
-    <script src="js/angular-ui-router.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
 
-    <script src="data/menu.js"></script>
+    <script src="app/menuData.js"></script>
+    <script src="app/helper.js"></script>
     
-    <script src="helloworld.js"></script>
-    <script src="service/init.js"></script>
+    <script src="index.js"></script>
+
+    <script src="app/initService.js"></script>
+    <script src="app/menuItemController.js"></script>
+    <script src="app/screenItemController.js"></script>
+
     <style>.active { color: red; font-weight: bold }</style>
   </head>
   
   <body ng-app="helloworld">
-    <a ui-sref="hello" ui-sref-active="active">Hello</a>
-    <a ui-sref="about" ui-sref-active="active">About</a>
-
     <ui-view></ui-view>
   </body> 
 </html>
