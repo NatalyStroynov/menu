@@ -1,5 +1,4 @@
-{
-
+var menuData = {
 	"ICM000": {
 		"url": "ICM000",
 		"type": "menu",

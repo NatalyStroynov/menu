@@ -13,7 +13,7 @@ var myJson ={
     
 this.doRequest = function() {
   return $timeout(function() {
-    return myJson;
+    return menuData;
   }, 1000);
 };
 
