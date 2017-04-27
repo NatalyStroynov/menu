@@ -1,4 +1,4 @@
-myApp.controller('ScreenItemController', function($uiRouter, $scope, $state, $rootScope, data){
+myApp.controller('ScreenItemController', function($scope, $state, $rootScope, data){
 
   $scope.screen = data;
 

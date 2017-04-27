@@ -1,4 +1,4 @@
-myApp.controller('MenuItemController', function($uiRouter, $scope, $state, $rootScope, data){
+myApp.controller('MenuItemController', function($scope, $state, $rootScope, data){
   $scope.menu = [];
 
   if(data && data.sub) {
