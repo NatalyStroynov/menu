@@ -1,1 +1,1 @@
-The angular-ui-router "Hello World" app
+The angular-ui-router "Menu Component" app
