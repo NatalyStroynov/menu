@@ -5,6 +5,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
  // $urlRouterProvider.otherwise('/');
 });
 
+
 myApp.run(function ($uiRouter,$state, initService, $rootScope,$location) {
    initService.getDataMenu().then(function(result) {
     console.log($location.path().split('/'));
@@ -30,6 +31,7 @@ myApp.run(function ($uiRouter,$state, initService, $rootScope,$location) {
        setMenuState('home', '/', { sub: result });
        $state.go('home');
      }
+
 
 
   }); 
